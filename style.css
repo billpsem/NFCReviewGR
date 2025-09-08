@@ -3,6 +3,14 @@ body{scroll-behavior:smooth;background:#f9f9f9;overflow-x:hidden;}
 a{text-decoration:none;color:inherit;}
 button{cursor:pointer;border:none;outline:none;position:relative;overflow:hidden;}
 
+html, body {
+  overflow-x: hidden;  /* Δεν επιτρέπει οριζόντιο scroll */
+  overflow-y: auto;    /* Κατακόρυφο scroll κανονικά */
+  scrollbar-width: none;  /* Κρύβει τη μπάρα στο Firefox */
+  -ms-overflow-style: none; /* Κρύβει τη μπάρα σε IE/Edge */
+}
+
+
 /* Colors & Gradients */
 :root{
   --primary:#ff4b2b;
