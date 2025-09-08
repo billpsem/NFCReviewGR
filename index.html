@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFC Stands - Google Reviews</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<nav>
+  <div class="container">
+    <div class="logo">NFCReviewGR</div>
+    <ul>
+      <li><a href="#hero">Αρχική</a></li>
+      <li><a href="#how">Πώς δουλεύει</a></li>
+      <li><a href="#benefits">Οφέλη</a></li>
+      <li><a href="#testimonials">Κριτικές</a></li>
+      <li><a href="#cta">Παραγγελία</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="hero">
+  <h1>Boost your Google Reviews με NFC Stands!</h1>
+  <p>Κάνε τους πελάτες σου να αφήνουν reviews σε 1 δευτερόλεπτο.</p>
+  <button onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Παράγγειλε Τώρα</button>
+</section>
+
+<section id="how">
+  <div class="container">
+    <h2 style="text-align:center;">Πώς δουλεύει</h2>
+    <div class="steps">
+      <div class="step"><img src="contactless.png" alt=""><h3>Τοποθέτησε το NFC Stand</h3><p>Στο μαγαζί σου, σε εμφανές σημείο.</p></div>
+      <div class="step"><img src="https://img.icons8.com/color/96/000000/tap.png" alt=""><h3>Ο πελάτης ακουμπά</h3><p>Το κινητό του στο NFC Stand.</p></div>
+      <div class="step"><img src="https://img.icons8.com/color/96/000000/google-logo.png" alt=""><h3>Αφήνει review</h3><p>Στο Google σε δευτερόλεπτα.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <div class="container">
+    <h2 style="text-align:center;">Οφέλη</h2>
+    <div class="benefits">
+      <div class="benefit"><h3>Γρήγορα & Απλά</h3><p>Μην χάνεις πελάτες – άφησε τους να γράφουν σε δευτερόλεπτα.</p></div>
+      <div class="benefit"><h3>Αύξηση Reviews</h3><p>Περισσότερα reviews σημαίνει περισσότερη αξιοπιστία.</p></div>
+      <div class="benefit"><h3>Εύκολο στη χρήση</h3><p>Τοποθέτησε και άφησε τους πελάτες να κάνουν τα υπόλοιπα.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <h2>Τι λένε οι πελάτες μας</h2>
+    <div class="testimonials-container">
+      <div class="testimonial"><p>“Τα NFC Stands μας βοήθησαν να αυξήσουμε τις Google reviews κατά 200%!”</p><h4>Γιάννης Π.</h4></div>
+      <div class="testimonial"><p>“Οι πελάτες μου τα λατρεύουν – πολύ εύκολη διαδικασία.”</p><h4>Μαρία Κ.</h4></div>
+      <div class="testimonial"><p>“Εξαιρετικό εργαλείο για μικρές επιχειρήσεις.”</p><h4>Κώστας Λ.</h4></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <h2>Παράγγειλε το NFC Stand σου σήμερα!</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" >
+      <input type="hidden" name="access_key" value="97e3a0b8-06fa-4b5f-8577-75a40d6943ac">
+      <input type="text" name="name" placeholder="Όνομα" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="number" name="number" placeholder="Ποσότητα" required>
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      <button type="submit">Υποβολή</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 NFC Stands | <a href="#">Facebook</a> <a href="https://www.instagram.com/billpsem_official/">Instagram</a> <a href="#">LinkedIn</a></p>
+</footer>
+
+<div id="modal">
+  <div id="modalContent">
+    <h2>Ευχαριστούμε για την παραγγελία!</h2>
+    <p>Θα επικοινωνήσουμε μαζί σας σύντομα.</p>
+    <button onclick="closeModal()">Κλείσιμο</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
